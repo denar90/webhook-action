@@ -1,0 +1,10 @@
+name: 'Webhook action'
+description: 'Yet another webhook action'
+inputs:
+  webhookUrl:
+    description: 'Url'
+  data:
+    description: 'Data'
+runs:
+  using: 'node12'
+  main: 'index.js'
