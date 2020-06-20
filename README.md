@@ -31,7 +31,7 @@ jobs:
       # Actions end
       - name: Webhook
         uses: denar90/webhook-action@master
-        env:
+        with:
           webhookUrl: ${{secrets.ACTION_WEBHOOK_URL}}
           # or just public URL, not suggested
           # webhookUrl: https://api.my-service.app/github-webhook
