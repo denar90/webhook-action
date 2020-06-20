@@ -30,7 +30,7 @@ jobs:
       # ...
       # Actions end
       - name: Webhook
-        uses: denar90/webhook-action@master
+        uses: denar90/webhook-action@0.1.0
         with:
           webhookUrl: ${{secrets.ACTION_WEBHOOK_URL}}
           # or just public URL, not suggested
