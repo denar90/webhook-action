@@ -26,4 +26,4 @@ jobs:
         uses: denar90/webhook-action@0.1.0
         with:
           webhookUrl: ${{secrets.ACTION_WEBHOOK_URL}}
-          data: '{ "gihub": ${{ toJSON(github) }}, "links": ${{steps.LHCIAction.outputs.links}} }'
+          data: '{ "github": ${{ toJSON(github) }}, "links": ${{steps.LHCIAction.outputs.links}} }'
