@@ -1,5 +1,7 @@
 # Webhook Action for Node env
 
+Yet another webhook action but for node env. Sends webhook `POST` request to API.
+
 ## Usage
 
 ```yml
@@ -31,5 +33,14 @@ jobs:
         uses: denar90/webhook-action@master
         env:
           webhookUrl: ${{secrets.ACTION_WEBHOOK_URL}}
+          # or just public URL, not suggested
+          # webhookUrl: https://api.my-service.app/github-webhook
           data: '{ "gihub": ${{ toJSON(github) }}, "links": ${{steps.LHCIAction.outputs.links}} }'
 ```
+
+
+### TBD:
+- add param to scpecity request type, currently supported only `POST`
+- tell me if you need more stuff :) 
+
+## License - MIT
