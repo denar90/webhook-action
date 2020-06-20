@@ -35,7 +35,7 @@ jobs:
           webhookUrl: ${{secrets.ACTION_WEBHOOK_URL}}
           # or just public URL, not suggested
           # webhookUrl: https://api.my-service.app/github-webhook
-          data: '{ "gihub": ${{ toJSON(github) }}, "links": ${{steps.LHCIAction.outputs.links}} }'
+          data: '{ "github": ${{ toJSON(github) }}, "links": ${{steps.LHCIAction.outputs.links}} }'
 ```
 
 
