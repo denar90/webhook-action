@@ -1,4 +1,4 @@
-name: 'Webhook action'
+name: 'Webhook Action for Node'
 description: 'Yet another webhook action'
 inputs:
   webhookUrl:
